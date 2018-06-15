@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_DCollectionViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tfz-3S-bkm">
+                                <rect key="frame" x="10" y="50" width="355" height="587"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PWE-ZH-vPi">
+                                    <size key="itemSize" width="356" height="587"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="KRH-Oj-P3S" customClass="CollectionViewCell" customModule="_DCollectionViewCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="587"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="356" height="587"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa2-LI-KHa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="356" height="587"/>
+                                                    <subviews>
+                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEJ-kX-1WJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="356" height="587"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="5AX-UL-wvn">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="356" height="587"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="14"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="5AX-UL-wvn" firstAttribute="leading" secondItem="gEJ-kX-1WJ" secondAttribute="leading" id="89p-Kt-mQK"/>
+                                                                <constraint firstAttribute="bottom" secondItem="5AX-UL-wvn" secondAttribute="bottom" id="VhX-NB-6qw"/>
+                                                                <constraint firstItem="5AX-UL-wvn" firstAttribute="top" secondItem="gEJ-kX-1WJ" secondAttribute="top" id="mGj-Tg-kQC"/>
+                                                                <constraint firstAttribute="trailing" secondItem="5AX-UL-wvn" secondAttribute="trailing" id="zmG-V8-dhx"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="14"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="gEJ-kX-1WJ" secondAttribute="bottom" id="AUN-KG-bBZ"/>
+                                                        <constraint firstItem="gEJ-kX-1WJ" firstAttribute="leading" secondItem="Oa2-LI-KHa" secondAttribute="leading" id="dRr-K1-o7w"/>
+                                                        <constraint firstItem="gEJ-kX-1WJ" firstAttribute="top" secondItem="Oa2-LI-KHa" secondAttribute="top" id="jzx-h6-brd"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gEJ-kX-1WJ" secondAttribute="trailing" id="slE-1i-stV"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                            <real key="value" value="0.25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                            <size key="value" width="0.0" height="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Oa2-LI-KHa" secondAttribute="trailing" id="4jp-8P-IK8"/>
+                                            <constraint firstItem="Oa2-LI-KHa" firstAttribute="top" secondItem="KRH-Oj-P3S" secondAttribute="top" id="edP-OW-EdY"/>
+                                            <constraint firstAttribute="bottom" secondItem="Oa2-LI-KHa" secondAttribute="bottom" id="jE6-sW-InT"/>
+                                            <constraint firstItem="Oa2-LI-KHa" firstAttribute="leading" secondItem="KRH-Oj-P3S" secondAttribute="leading" id="zcF-1q-GMq"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="5AX-UL-wvn" id="DeT-ys-88p"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="uRF-lF-BKT"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Rc2-iX-hta"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tfz-3S-bkm" secondAttribute="bottom" constant="30" id="7kx-SR-MxZ"/>
+                            <constraint firstItem="tfz-3S-bkm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="MRP-Ab-KT1"/>
+                            <constraint firstItem="tfz-3S-bkm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ePh-BF-OhT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tfz-3S-bkm" secondAttribute="trailing" constant="10" id="y0c-4p-Ogt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="tfz-3S-bkm" id="d1U-Wv-ETS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nature" width="621" height="1104"/>
+    </resources>
+</document>
